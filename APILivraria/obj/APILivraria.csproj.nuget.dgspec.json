@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\LivManWebAPI\\APILivraria\\APILivraria.csproj": {}
+    "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Projetos\\Livraria\\livraria-amancio\\APILivraria\\APILivraria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\LivManWebAPI\\APILivraria\\APILivraria.csproj": {
+    "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Projetos\\Livraria\\livraria-amancio\\APILivraria\\APILivraria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\LivManWebAPI\\APILivraria\\APILivraria.csproj",
+        "projectUniqueName": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Projetos\\Livraria\\livraria-amancio\\APILivraria\\APILivraria.csproj",
         "projectName": "APILivraria",
-        "projectPath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\LivManWebAPI\\APILivraria\\APILivraria.csproj",
+        "projectPath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Projetos\\Livraria\\livraria-amancio\\APILivraria\\APILivraria.csproj",
         "packagesPath": "C:\\Users\\allan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\LivManWebAPI\\APILivraria\\obj\\",
+        "outputPath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Projetos\\Livraria\\livraria-amancio\\APILivraria\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\allan\\AppData\\Roaming\\NuGet\\NuGet.Config",

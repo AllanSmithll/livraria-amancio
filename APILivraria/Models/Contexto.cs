@@ -7,8 +7,6 @@ namespace APILivraria.Models
         public DbSet<Livro> Livros { get; set; }
 
         public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes)
-        {
-            
-        } 
+        {} 
     }
 }

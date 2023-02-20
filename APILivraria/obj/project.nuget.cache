@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/VRBQzPDIc49qpALWCGPeZkDFBkr7nnYH3mGShKy3trr9IZrQFqrIsqC8PRaQteNlYNf9BC3C/Qk5UmoJILM8Q==",
+  "dgSpecHash": "JuyB8gkKAHoH4ZgFgXXpSW01EUs+Ow/f/ds25gu6VWUPanowuofTam2DgxVjYoVXFqMzAgiB2yNn32G78NGmSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\LivManWebAPI\\APILivraria\\APILivraria.csproj",
+  "projectFilePath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Projetos\\Livraria\\livraria-amancio\\APILivraria\\APILivraria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\allan\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\allan\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
