@@ -16,7 +16,7 @@ namespace APILivraria.Migrations
                 {
                     IdAutor = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(50)", nullable: false),
+                    Nome = table.Column<string>(type: "nvarchar(100)", nullable: false),
                     DataNascimento = table.Column<int>(type: "int", nullable: false),
                     Obras = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
@@ -29,16 +29,17 @@ namespace APILivraria.Migrations
                 name: "Livros",
                 columns: table => new
                 {
-                    Isbn = table.Column<string>(type: "nvarchar(13)", nullable: false),
+                    Isbn = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Titulo = table.Column<string>(type: "nvarchar(100)", nullable: false),
-                    Subtitulo = table.Column<string>(type: "nvarchar(100)", nullable: true),
+                    Subtitulo = table.Column<string>(type: "nvarchar(100)", nullable: false),
                     Resumo = table.Column<string>(type: "nvarchar(500)", nullable: false),
-                    Genero = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Genero = table.Column<string>(type: "nvarchar(200)", nullable: false),
                     QuantPaginas = table.Column<int>(type: "int", nullable: false),
-                    DataPublicacao = table.Column<string>(type: "nvarchar(10)", nullable: false),
+                    DataPublicacao = table.Column<string>(type: "nvarchar(8)", nullable: false),
                     Edicao = table.Column<int>(type: "int", nullable: false),
-                    NomeAutor = table.Column<string>(type: "nvarchar(100)", nullable: false),
-                    NomeEditora = table.Column<string>(type: "nvarchar(150)", nullable: false)
+                    NomeAutor = table.Column<string>(type: "nvarchar(50)", nullable: false),
+                    NomeEditora = table.Column<string>(type: "nvarchar(100)", nullable: false)
                 },
                 constraints: table =>
                 {

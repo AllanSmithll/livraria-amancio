@@ -47,8 +47,11 @@ namespace APILivraria.Migrations
 
             modelBuilder.Entity("APILivraria.Models.Livro", b =>
                 {
-                    b.Property<string>("Isbn")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Isbn")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Isbn"));
 
                     b.Property<string>("DataPublicacao")
                         .IsRequired()

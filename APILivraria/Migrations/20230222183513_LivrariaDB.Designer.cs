@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace APILivraria.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20230222025256_LivrariaDB")]
+    [Migration("20230222183513_LivrariaDB")]
     partial class LivrariaDB
     {
         /// <inheritdoc />
@@ -50,8 +50,11 @@ namespace APILivraria.Migrations
 
             modelBuilder.Entity("APILivraria.Models.Livro", b =>
                 {
-                    b.Property<string>("Isbn")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Isbn")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Isbn"));
 
                     b.Property<string>("DataPublicacao")
                         .IsRequired()

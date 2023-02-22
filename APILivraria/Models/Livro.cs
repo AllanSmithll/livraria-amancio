@@ -5,7 +5,7 @@ namespace APILivraria.Models
     [PrimaryKey(nameof(Isbn))]
     public class Livro
     {
-        public Livro(string isbn, string titulo, string subtitulo, string resumo, string genero, int quantPaginas, string dataPublicacao, int edicao, string nomeAutor, string nomeEditora)
+        public Livro(int isbn, string titulo, string subtitulo, string resumo, string genero, int quantPaginas, string dataPublicacao, int edicao, string nomeAutor, string nomeEditora)
         {
             this.Isbn = isbn;
             this.Titulo = titulo;
@@ -19,7 +19,7 @@ namespace APILivraria.Models
             this.NomeEditora = nomeEditora;
         }
 
-        public string Isbn { get; set; }
+        public int Isbn { get; set; }
 
         public string Titulo { get; set; }
 
