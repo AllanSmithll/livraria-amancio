@@ -14,7 +14,7 @@ namespace APILivraria
         public IConfiguration configRoot { get; }
 
         public void ConfigureServices(IServiceCollection services) {
-            services.AddDbContext<Contexto>(opcoes => opcoes.UseSqlServer(configRoot.GetConnectionString("ConexaoDB")));
+            services.AddDbContext<Contexto>(opcoes =>  opcoes.UseSqlServer(configRoot.GetConnectionString("ConexaoDefault")));
             services.AddRazorPages();
         }
         public void Configure(WebApplication app, IWebHostEnvironment env) {

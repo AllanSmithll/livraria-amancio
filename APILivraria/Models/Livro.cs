@@ -5,17 +5,18 @@ namespace APILivraria.Models
     [PrimaryKey(nameof(Isbn))]
     public class Livro
     {
-        public Livro(string isbn, string titulo, string subtitulo, string resumo, string genero, int quantPaginas, string dataPublicacao, string nomeAutor, string nomeEditora)
+        public Livro(string isbn, string titulo, string subtitulo, string resumo, string genero, int quantPaginas, string dataPublicacao, int edicao, string nomeAutor, string nomeEditora)
         {
-            Isbn = isbn;
-            Titulo = titulo;
-            Subtitulo = subtitulo;
-            Resumo = resumo;
-            Genero = genero;
-            QuantPaginas = quantPaginas;
-            DataPublicacao = dataPublicacao;
-            NomeAutor = nomeAutor;
-            NomeEditora = nomeEditora;
+            this.Isbn = isbn;
+            this.Titulo = titulo;
+            this.Subtitulo = subtitulo;
+            this.Resumo = resumo;
+            this.Genero = genero;
+            this.QuantPaginas = quantPaginas;
+            this.DataPublicacao = dataPublicacao;
+            this.Edicao = edicao;
+            this.NomeAutor = nomeAutor;
+            this.NomeEditora = nomeEditora;
         }
 
         public string Isbn { get; set; }
@@ -31,6 +32,8 @@ namespace APILivraria.Models
         public int QuantPaginas { get; set; }
 
         public string DataPublicacao{ get; set; }
+
+        public int Edicao { get; set; }
 
         public string NomeAutor { get; set; }
 

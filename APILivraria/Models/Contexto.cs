@@ -5,6 +5,7 @@ namespace APILivraria.Models
     public class Contexto : DbContext
     {
         public DbSet<Livro> Livros { get; set; } = null!;
+        public DbSet<Autor> Autores { get; set; } = null!;
 
         public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes)
         {
