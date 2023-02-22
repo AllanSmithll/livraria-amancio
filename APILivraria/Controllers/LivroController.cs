@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace APILivraria.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class LivroController : ControllerBase
     {
         private readonly Contexto _contexto;

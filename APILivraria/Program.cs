@@ -1,8 +1,8 @@
 using APILivraria;
+using APILivraria.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-var startup = new Startup(builder.Configuration);
-startup.ConfigureServices(builder.Services);
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -11,7 +11,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-startup.Configure(app, builder.Environment);
+
+// Connection
+
+
+var connect = builder.Configuration.GetConnectionString("ConexaoDefault");
+var conect = builder.Services.AddDbContext<Contexto>(opcoes => opcoes.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoDefault"))
+);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
